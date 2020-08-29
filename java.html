@@ -54,6 +54,8 @@
 
     <p id="cars"></p>
 
+    <p id="calc"></p>
+
 
     <!-- This is the way to write the script function inside the body tag-->
 <script>
@@ -118,7 +120,12 @@
     var cars= [ 'volvo', 'BMW', 'Mercedes']; // arrays are written inside a [] and can have value
     document.getElementById('cars').innerHTML = cars[1];// here the value is 1 so it will show BMW
 
-
+    var x = doClac( 2, 2);
+    function doClac(a ,b) {
+        return a * b;
+    }
+    document.getElementById('calc').innerHTML = x;
+    
 
 
 
