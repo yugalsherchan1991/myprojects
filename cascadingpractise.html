@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Practise</title>
+    <style>
+        body{
+            background: blue url(facebook.png) no-repeat top right;
+        }
+            
+        .cardBorder{
+            border:solid 1px blue;
+        }
+        .cardDotted{
+            border:dotted 1px black;
+        }
+        .cardRounded{
+            border:ridge 5px black;
+        }
+        div.cardStyle{
+            border-style:solid ridge;
+            width: 50%;
+            height: 1000px;
+            border-color: red blue yellow;
+            text-align: justify;
+            background-color: skyblue;
+        }
+        #leftBorder{
+            border-left: solid red 20px;
+            background-color: lightgray;
+            border-radius: 5px;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <p class="cardBorder"> This is a Solid border with black color.</p>
+    <p class="cardDotted"> This is a Dotted border with 1px width.</p>
+    <p class="cardRounded"> This is a Rounded border with 1px width</p>
+    <div class="cardStyle">
+        <p> GOOGLE</p>
+        <p> This is a cardStyle that can be used to give 
+            a pre 
+            and pre disposed elements.
+        </p>
+    </div>
+    <p id="leftBorder"> This is border left property only </p>
+</body>
+</html>

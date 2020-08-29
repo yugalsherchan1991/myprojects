@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Margin Css</title>
+    <style> 
+        /* this is the css property for the box model */ 
+       #boxModel{
+           border:blue solid 2px;
+           background-color:red;
+           margin: 100px 150px 100px 80px;
+           max-width:300px;
+           padding:25px 25px;
+           margin:auto;
+           outline-style: dashed;
+           outline-color: green;
+           outline-width: thick;
+           text-align:right;
+           font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
+       }
+       /* this is the css property for Link styles */
+       a:link{
+           color:brown;
+           text-decoration: none;
+           background-color: red;
+       }    
+       a:visited{
+           color: blue;
+           text-decoration: none;
+       }
+       a:hover{
+           color:green;
+           text-decoration: underline;
+           background-color:salmon;
+       }
+       a:active{
+           color:hotpink;
+           text-decoration: underline;
+       }
+       /* this is the css property for the table*/
+       table,th,td{
+           border: black 1px solid;
+           border-collapse: collapse;
+           
+       }
+       th,td{
+           text-align: bottom;
+           padding: 5px;
+           width: 400px;
+           font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+           
+       }
+       th{
+           background-color: green;
+           padding: 10px;
+       }
+       tr:nth-child(even) {
+           background-color: #dddddd;
+       } 
+       tr:hover {background-color: blue;} 
+
+       div.Relative{
+            border: 2px black solid;
+            position: fixed;
+            left: 0px;
+            bottom: 0px;
+            width: 50%;
+            background-color: chartreuse;
+        
+       }
+       div.Box{
+           border:brown 2px solid;
+           padding: 5px;
+       }
+       .clearfix::after{
+           content: "";
+           clear: right;;
+           display: table;
+       }
+       .img1{
+           float:right;
+       }
+       
+               
+    </style>
+    <script src="https://kit.fontawesome.com/2f4fed5051.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <h1> This is a Margin exercise</h1>
+    <div id="boxModel">
+        <p> A margin is the space around the element and can be changed accordingly.</p>
+        <p> This is a different text </p>
+    </div>
+
+    <!-- These are the links to the icons from fontawesome.-->
+    <i class="fab fa-accessible-icon" style="font-size: 75px; color: red;"></i></br>
+    <i class="fab fa-amazon-pay"></i></br>
+    <i class="fab fa-cc-paypal"></i>
+    <i class="fab fa-cc-visa"></i>
+    <i class="fab fa-app-store"></i></br></br>
+    <a href="#" target="_blank"> This is a Link</a>
+    <a href="#"> This is another link.</a></br></br>
+
+    <!-- This is an example of table decorations-->
+    <table>
+        <tr>
+            <th>Company</th>
+            <th>Service</th>
+            <th colspan="2">Contacts</th>
+        </tr>
+        <tr>
+            <td>Raj INTL</td>
+            <td> Information Technology</td>
+            <td> Raj Gurung</td>
+            <td>9806815964</td>
+        </tr>
+        <tr>
+            <td>Yugal CORP</td>
+            <td>Communication Services</td>
+            <td> Yugal Sherchan</td>
+            <td>9806815864</td>
+        </tr>
+        <tr>
+            <td>Bharat Silicon Pvt Ltd</td>
+            <td> Silion Products</td>
+            <td> Bharat Goswami</td>
+            <td></td>
+        </tr>
+    </table></br></br>
+    <pre style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; color: blue;"> 
+        This is an example of Pre.
+    
+        What ever i type can be changed or not.
+        but this is ok with  me i will see.
+        
+        what will happen with this line now and rest of the line as well.
+    </pre>
+
+    <div class="Relative"> This is a a text positioned fixed.</div>
+
+    <div class= "Box">
+        <p> This is an example of float and clear property in CSS</p>
+        <div class="clearfix">
+            <img class="img1" src="facebook.png" alt="facebookicon" height="100px" width="200px"> 
+            <p> this is a text just for the showcase in this example of 
+                clear and float in CSS hope this will be an easy one to 
+                go through.
+            </p>
+        </div>
+    </div>
+    
+
+</body>
+</html>

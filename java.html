@@ -1,0 +1,129 @@
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>this is javascript </h1>
+
+    <!-- here i am calling the function from script tag at the bottom of the body section-->
+    <p id="first"> we can change the html content</p>
+    <button type="button" onclick="myFunction()"> check this out</button>
+
+    <!-- this is the inline way to write the java script-->
+    <p id="Style"> Javascript can change the style of Html element</p>
+    <button type="button" onclick="document.getElementById('Style').style.color='red'">Click me</button>
+
+    <p id="Size"> We can chage the size of the text</p>
+    <button type="button" onclick="document.getElementById('Size').style.fontSize='50px'">Click me!</button></br>
+
+    <!-- This is an example of the bulb on and off javascript button where all the function are inline-->
+    <p> This is an example of Bulb on and off with button</p>
+    <button onclick="document.getElementById('img1').src='pic_bulboff.gif'">Turn off the light</button>
+    <img id="img1" src="pic_bulboff.gif" width="100px">
+    <button onclick="document.getElementById('img1').src='pic_bulbon.gif'">Turn on the light</button>
+
+    <p id="yug"> this is a practise javascript</p>
+    <button type="button" onclick= "myColor()">Whats here check out</button></br></br>
+
+    <!-- This function is to Print the current page in windows -->
+    <div>
+    <button onclick="window.print()"> Print this Page</button>
+    </div>
+
+    <!-- two group of function being called together here-->
+    <p id="group1"> </p>
+    <p id="group2"> This is group 2 </p>
+    <button onclick="myGroup()"> Click me </button>
+
+    <p id="math"></p>
+    <p id="names"></p>
+    <p id="math1"></p>
+    <p id="math2"></p></br>
+
+    <p id="variable"></p>
+    <p id="Increment"></p>
+
+    <p id="math3"></p>
+
+    <p id="math4"></p>
+    
+    <p id="math5"></p>
+
+    <p id="cars"></p>
+
+
+    <!-- This is the way to write the script function inside the body tag-->
+<script>
+    function myColor() {
+        document.getElementById('yug').style.color = 'blue';
+    }
+    
+    function myFunction() {
+        document.getElementById("first").innerHTML = "Hello this is changed";
+    }
+    // this is to show the windows alert msg :
+    window.alert( "this web page is not working");
+    
+    function myGroup() {
+        document.getElementById('group1').innerHTML = 'hi there how are you';
+        document.getElementById('group2').innerHTML = 'hi there again ';
+    }
+    
+    // here we add two numbers together:
+    document.getElementById('math').innerHTML = (5+56)/2;
+    
+    //here  we called the id names and add two strings together:
+    document.getElementById('names').innerHTML = 'yugal' + ' ' + 'sherchan';
+
+    var x, y;
+    x = 10 + 10;
+    y = x * 2;
+    document.getElementById('math1').innerHTML= y;
+    
+    // this is an example of varibales where i've used 4 varibale:
+    var a, b, c, d;
+    a = 2;
+    b = a + 2;
+    c = (b + 2) * a;
+    d = c + 1;
+    document.getElementById('math2').innerHTML = d;
+
+    // this is the example of concanetation of the varibales:
+    var carName = "Mercedes", person = "yugal sherchan", address = "Butwal";
+    document.getElementById('variable').innerHTML = carName + '<br>' + person + '<br>' + address;
+    
+    var x = 5;
+    x++;
+    var z = x;
+    document.getElementById('Increment').innerHTML = z;
+
+    // This is the use of Math.pow  for exponentiating variables:
+    var x = 10;
+    document.getElementById('math3').innerHTML = Math.pow ( x, 3);    
+
+    var x = 123e5;
+    var y = 123e-5;
+    document.getElementById( 'math4').innerHTML = x + '<br>' + y;
+
+    // This is an example of Boolean data type:
+    var x = 10;
+    var y = 11;
+    var z = 10;
+    document.getElementById('math4').innerHTML = (x==y) + '<br>' + (x==z);
+
+    // This is the example of JS Array:
+    var cars= [ 'volvo', 'BMW', 'Mercedes']; // arrays are written inside a [] and can have value
+    document.getElementById('cars').innerHTML = cars[1];// here the value is 1 so it will show BMW
+
+
+
+
+
+    
+</script>
+
+</body>
+</html>
