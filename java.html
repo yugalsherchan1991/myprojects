@@ -39,11 +39,17 @@
     <button onclick="myGroup()"> Click me </button>
 
     <p id="math"></p>
+
     <p id="names"></p>
+
     <p id="math1"></p>
+
     <p id="math2"></p></br>
 
     <p id="variable"></p>
+
+    <p id="Decrement"></p>
+
     <p id="Increment"></p>
 
     <p id="math3"></p>
@@ -55,6 +61,9 @@
     <p id="cars"></p>
 
     <p id="calc"></p>
+
+    <p id="celcius"></p>
+    <p id="multi"></p>
 
 
     <!-- This is the way to write the script function inside the body tag-->
@@ -97,10 +106,15 @@
     var carName = "Mercedes", person = "yugal sherchan", address = "Butwal";
     document.getElementById('variable').innerHTML = carName + '<br>' + person + '<br>' + address;
     
-    var x = 5;
+    var x = a;
     x++;
     var z = x;
     document.getElementById('Increment').innerHTML = z;
+
+    var y = 6;
+    y--;
+    var a = y;
+    document.getElementById('Decrement').innerHTML = a;
 
     // This is the use of Math.pow  for exponentiating variables:
     var x = 10;
@@ -120,16 +134,32 @@
     var cars= [ 'volvo', 'BMW', 'Mercedes']; // arrays are written inside a [] and can have value
     document.getElementById('cars').innerHTML = cars[1];// here the value is 1 so it will show BMW
 
-    var x = doClac( 2, 2);
-    function doClac(a ,b) {
+
+// This is an example to fuction used as varibale values:
+    var x = toCelcius(77)
+    function toCelcius(f) {
+        return (5/9) * (f - 32);
+    }
+    document.getElementById('celcius').innerHTML = "The Temperature today is" + " " + toCelcius(77) + " " + "digree Celcius"
+  
+    var y = myMulti(4, 5);
+    function myMulti( a, b) {
+        return a + b;
+    }
+    document.getElementById('multi').innerHTML = y;
+
+
+  // Just a normal function can use Return to invoke result:
+    function calCulator(a, b){
         return a * b;
     }
-    document.getElementById('calc').innerHTML = x;
-    
-
-
+    document.getElementById('calc').innerHTML = calCulator(2 ,2);
 
     
+
+   
+
+
 </script>
 
 </body>
