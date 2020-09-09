@@ -1,7 +1,7 @@
 <!-- This is the way to write the script function inside the body tag-->
 
        // this is to show the windows alert msg :
-     window.alert( "this web page is not working");
+     alert( "this web page is not working");
 
     function myColor() {
         document.getElementById('yug').style.color = 'blue';
@@ -67,7 +67,6 @@
     // This is the example of JS Array:
     var cars= [ 'volvo', 'BMW', 'Mercedes']; // arrays are written inside a [] and can have value
     document.getElementById('cars').innerHTML = cars[1];// here the value is 1 so it will show BMW
-
 
 // This is an example to fuction used as varibale values:
     var x = toCelcius(77)
