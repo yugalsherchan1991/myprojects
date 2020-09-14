@@ -172,7 +172,7 @@ console.log(`Hi My name is ${myName}. happy to meet you`);
             d.appendChild(br); 
     }
 */
-
+/*
 let d = document.getElementById('destination');
 for(let i = 10; i >= 0; i--){
     for(let k = i; k < 10; k++){
@@ -190,3 +190,48 @@ for(let i = 10; i >= 0; i--){
     var br = document.createElement("br");
         a.appendChild(br);
 }
+
+
+let circle = {
+    radius: 1,
+    draw: function(){
+        console.log('This is an example of objects');
+    }
+}
+circle.draw();
+
+// Factory Function example
+
+function createCircle(radius){
+    return{
+        radius,
+        draw: function(){
+            console.log('This is an example of factory function')
+        }
+    };
+}
+
+const newCircle = createCircle(1);
+newCircle.draw();
+
+
+//This is an example of Constructor function
+
+function Circle(radius){
+    this.radius = radius;
+    this.draw = function(){//here this points to the new empty object
+        console.log('This is an example of constructor function');
+    }
+}
+const newCircle = new Circle(1);//new empty object is created with new keyword
+newCircle.draw();
+newCircle.radius;
+
+*/
+
+let x = {first: 1 , second: 2};
+let y = x;
+
+x.first = 20;
+console.log(x);
+console.log(y);
